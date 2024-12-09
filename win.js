@@ -44,5 +44,5 @@ function victory() {
 }
 //luzniak's room
 function nextroom() {
-  window.location.href = "https://shmygw.csb.app/intro.html";
+  window.location.href = "https://beatopia.github.io/SableyeMaze/intro.html";
 }
