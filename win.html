@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="win.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Elite4-Ghostnew</title>
+  </head>
+  <body id="firstPage">
+    <div id="transitionBlock" class="transition"></div>
+    <div id="pokeBall" class="pokeball spin-image">
+      <img onclick="nextroom()" src="images/Master-Ball.png" />
+    </div>
+    <script src="win.js"></script>
+    <script src="preload.js"></script>
+  </body>
+  <div id="myModal" class="modal">
+    <div class="mrow center-content">
+      <img
+        src="images/32.png"
+        class="clickableText ctext"
+        id="t1"
+        onclick="changetext1()"
+      />
+      <img
+        src="images/33.png"
+        class="clickableText ctext hidden"
+        id="t2"
+        onclick="changetext2()"
+      />
+      <img
+        src="images/34.png"
+        class="clickableText ctext hidden"
+        id="t3"
+        onclick="victory()"
+      />
+    </div>
+    <div class="mrow center-content">
+      <img src="images/GhostR4Y.png" />
+    </div>
+  </div>
+</html>

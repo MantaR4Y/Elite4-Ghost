@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Elite4-Ghostnew</title>
+  </head>
+  <body id="body">
+    <div class="hidescare none black" id="hidescare"></div>
+
+    <!-- jumpscare image that grows when the 'growscare' class is added -->
+    <img src="images/JumpScare.jpg" id="jumpscare" class="jumpscare" />
+
+    
+    <!-- to show images in the 'faces' folder you would write "images/faces/jack.png" -->
+    <div class="head black">
+      <div class="FH"></div>
+      <div class="timer  center-content"><p id="timer"></p></div>
+      <div class="SH"></div>
+      <div class="search  center-content img">
+        <img src="images/trevenantfindme.png">
+      </div>
+    </div>
+
+    <div class="legs bg">
+
+      <!--first row-->
+      <div class="row">
+        <div class="spot center-content img"></div>
+        <div class="spot center-content img"></div>
+        <div class="spot center-content img"></div>
+        <div class="spot center-content img"></div>
+        <div class="spot center-content img"></div>
+        <div class="spot center-content img"></div>
+        <div class="spot center-content img"></div>
+        <div class="spot center-content img"></div>
+        <div class="spot center-content img"></div>
+        <div class="spot center-content img"></div>
+      </div>
+      <!--second row-->
+
+        <div class="row">
+          <div class="spot center-content img">
+            <img
+            class="clickable"
+            id="trevenant"
+            src="images/trevenant.png"
+            onclick="foundMe()"
+          />
+          </div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+        </div>
+        <!--third row-->
+        <div class="row">
+          <div class="spot center-content img">
+          </div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img">
+       
+          </div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+        </div>
+        <!--fourth row-->
+        <div class="row">
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img">
+
+          </div>
+
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+        </div>
+        <!--fifth row-->
+        <div class="row">
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img">
+
+          </div>
+          <div class="spot center-content img"></div>
+          <div class="spot center-content img"></div>
+        </div>
+        <!--sixth row-->
+        <div class="row">
+            <div class="spot center-content img"></div>
+            <div class="spot center-content img"></div>
+            <div class="spot center-content img"></div>
+            <div class="spot center-content img"></div>
+            <div class="spot center-content img"></div>
+            <div class="spot center-content img"></div>
+            <div class="spot center-content img"></div>
+            <div class="spot center-content img">
+          
+            </div>
+            <div class="spot center-content img"></div>
+            <div class="spot center-content img"></div>
+          </div>
+        </div>
+      </div>
+
+      <!--the darkness-->
+      <div class="the-darkness"></div>
+    </div>
+
+  <!--  <!--bg music
+    <audio id="backgroundMusic" autoplay loop>
+      <source src="sounds/LavenderTownMusic.mp3" type="audio/mp3" />
+    </audio> -->
+    <script src="trevenant.js"></script>
+    <script src="preload.js"></script>
+
+  </body>
+
+  <div id="myModal" class="modal">
+    <div class="mrow center-content">
+      <img
+        src="images/18.png"
+        class="clickableText ctext"
+        id="t1"
+        onclick="changetext1()"
+      />
+      <img
+        src="images/19.png"
+        class="clickableText ctext hidden"
+        id="t2"
+        onclick="changetext2()"
+      />
+      <img
+        src="images/20.png"
+        class="clickableText ctext hidden"
+        id="t3"
+        onclick="nextroom()"
+      />
+    </div>
+    <div class="mrow center-content">
+      <img src="images/GhostR4Y.png" />
+    </div>
+  </div>
+  </html>
