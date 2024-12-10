@@ -70,8 +70,6 @@ function foundMe() {
   const aegislashSound = new Audio("sounds/AegislashCry.mp3");
   aegislashSound.play();
   music.pause();
-  clocksound.pause();
-  heartbeat.pause();
   setTimeout(function () {
     begintext();
   }, 1500);
